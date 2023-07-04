@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "voyage";
+    src: url(../typo/Voyage.otf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black ;
+    margin: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.space-b{
+    justify-content: space-between;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+p{
+    color: white;
+}
+
+h2{
+    color: white;
+    font-family: "voyage";
+}
+
+.m-t{
+    margin-top: 10rem;
+}
+
+/* HEADER */
+
+/* NAVBAR */
+
+nav{
+    padding: 0.1rem;
+    justify-content: flex-end;
+    margin-bottom: 0.3rem;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    margin-right: 5rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    opacity: 100%;
+    color: white;
+    font-family: "voyage";
+}
+
+nav ul li{
+    padding-top: 0.6rem;
+}
+
+.kai{
+    display: flex;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    border: 1px solid white;
+    border-radius: 3rem;
+
+}
+
+/* FIN NAVBAR */
+
+.headervideo{
+    display: block;
+    width: 90%;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+h1{
+    color: white;
+    z-index: 2;
+    text-align: center;
+    font-size: 120px;
+    opacity: 70%;
+    line-height: 7rem;
+    letter-spacing: 13px;
+    font-family: "voyage";
+}
+
+.titrenom{
+    width: 100%;
+    text-align: center;
+    top: 270px;
+}
+
+.souris{
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 50px;
+    align-self: center;
+    left: 48%;
+    top:80%
+}
+
+.souris .wheel{
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 7px;
+    height: 13px;
+    background-color: white;
+    border-radius: 20px;
+    left:50%;
+    top: 15%;
+    animation: souriswheel 2s ease-in-out infinite;
+}
+
+@keyframes souriswheel {
+    0%{
+        opacity: 1;
+        top:15%
+    }
+
+    100%{
+        opacity: 0;
+        top: 65%;
+    }
+    
+}
+
+/* FIN HEADER */
+
+/* MAIN */
+
+
+/* SECTION 1 */
+
+.section-title{
+    max-width: 700px;
+    text-align: center;
+    font-size: 37px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 64px;
+    margin: 0 auto; 
+    display: flex;
+    position: relative;
+    font-family: "voyage";
+}
+
+.intro-wrap{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 48px;
+    display: flex;
+    margin-top: 7rem;
+    flex-direction: column;
+}
+
+.intro-image{
+    position: relative; 
+}
+
+.intro-image img{
+    max-width: 135px;
+    display: inline-block;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition-duration: 0.6s;
+}
+
+.intro-image img:hover{
+    transform: scale(1.5);
+    transition-duration: 0.6s;
+}
+
+.voiture:hover{
+    rotate: 5deg;
+}
+
+.foret:hover{
+    rotate: -7deg;
+}
+
+.mer:hover{
+    rotate: 3deg;
+}
+
+/* FIN SECTION 1 */
+
+/* SECTION 2 */
+
+.presentation{
+    background-image: url(../img/page1/bateau.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+    line-height: 2rem;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 2rem;
+    border: 3px solid white;
+    font-weight: bold;
+}
+
+/* FIN SECTION 2 */
+
+/* SECTION 3 */
+
+.work{
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.ensemblecouverture{
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.ensemblecouverture:hover{
+    opacity: 0.7;
+    scale: 1.03;
+    transition: 0.2s; 
+}
+
+h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "voyage";
+    font-size: 2rem;
+}
+
+.couverture{
+    width: 90% ;
+    height: 100%;
+    border-radius: 2rem;
+    border: solid 2px white;
+}
+
+
+
+/* FIN SECTION 3 */
+
+/* FIN MAIN */
