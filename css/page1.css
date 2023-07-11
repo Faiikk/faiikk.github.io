@@ -77,6 +77,12 @@ nav ul li a{
     opacity: 100%;
     color: white;
     font-family: "voyage";
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    color:rgb(33, 194, 169) ;
+    transition: 0.5s;
 }
 
 nav ul li{
@@ -103,23 +109,6 @@ nav ul li{
     background-color: rgb(33, 194, 169);
     transition: 0.3s;
 }
-
-.kai img{
-    animation: van 8s ease-out infinite ;
-}
-
-@keyframes van {
-    0%{
-        opacity: 1;
-    }
-
-    100%{
-        margin-left: 15rem;
-        opacity: 0;
-    }
-    
-}
-
 
 /* FIN NAVBAR */
 
@@ -187,7 +176,6 @@ h1{
 
 /* MAIN */
 
-
 /* SECTION 1 */
 
 .section-title{
@@ -211,6 +199,12 @@ h1{
     display: flex;
     margin-top: 7rem;
     flex-direction: column;
+    transition: 0.5s;
+}
+
+.intro-wrap h2:hover{
+    color:rgb(33, 194, 169);
+    transition: 0.5s;
 }
 
 .intro-image{
@@ -251,14 +245,20 @@ h1{
     background-image: url(../img/page1/bateau.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 3rem;
-    line-height: 2rem;
+    padding: 7rem;
+    line-height: 2.5rem;
     margin: 0 auto;
     width: 80%;
     text-align: center;
     margin-top: 2rem;
     border: 3px solid white;
     font-weight: bold;
+    font-size: 18px;
+}
+
+.presentation p a{
+    color: white;
+    text-decoration:underline;
 }
 
 /* FIN SECTION 2 */
@@ -298,8 +298,172 @@ h3{
     border: solid 2px white;
 }
 
-
+.pt{
+    padding-top: 20px;
+}
 
 /* FIN SECTION 3 */
 
 /* FIN MAIN */
+
+/* FOOTER */
+
+footer{
+    margin-top: 300px;
+}
+
+h3 a{
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+h3 a:hover{
+    color:rgb(33, 194, 169);
+    transition: 0.3s;
+}
+
+.behance h3{
+    text-align: center;
+    font-family: "voyage";
+    font-size: 80px;
+    letter-spacing: 5px;
+    border: dashed 2px white;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h4{
+    color: white;
+    margin: 0 auto;
+    font-family: "voyage";
+    margin-top: 2rem;
+    font-size: 30px;
+}
+
+.behance{
+    width: 100%;
+}
+
+.behance img{
+    width: 200px;
+    animation: van 20s ease-out infinite ;
+    margin-top: 40px;
+}
+
+@keyframes van {
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        margin-left: 85%
+    }
+}
+
+/* FIN FOOTER */
+
+/* _________________________________________________PARTIE RESPONSIVE */
+
+@media screen and (max-width:600px){
+
+    /* HEADER */
+
+    .headervideo{
+        display: none;
+    }
+
+    .souris{
+        display: none;
+    }
+
+    h1{
+        font-size: 120px;
+        position: relative;
+        opacity: 0.8;
+        margin-top: 2rem;
+        line-height: 150px;
+        
+    }
+
+    .titrenom{
+        position: relative;
+        top:0
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        margin-right: 3.5rem;
+    }
+
+    ul{
+        margin-left: 1rem;
+    }
+
+    nav ul li{
+        padding-top: 1rem;
+    }
+
+    .kai{
+        font-size: 15px;
+        padding-top: 0.9rem;
+        padding-left: 0.9rem;
+    }
+
+    /* FIN HEADER*/
+
+    /* SECTION 2 */
+
+    .presentation{
+        padding: 2.5rem;
+    }
+
+    /* FIN SECTION 2 */
+
+ 
+    /* SECTION 3 */
+
+    .work{
+        flex-direction: column;
+    }
+
+    .ensemblecouverture{
+        width: 70%;
+        margin-bottom: 50px;
+    }
+
+    /* FIN SECTION 3 */
+
+    /* FOOTER */
+
+    footer{
+        margin-top: 100px;
+    }
+
+    .behance h3{
+        font-size: 50px;
+    }
+
+    h4{
+        font-size: 25px;
+    }
+
+    .behance img{
+        width: 150px;
+        animation: van 7s ease-out infinite ;
+        margin-top: 40px;
+    }
+    
+    @keyframes van {
+        0%{
+            opacity: 1;
+        }
+    
+        100%{
+            margin-left: 325px;
+        }
+
+    }
+
+    /* FIN FOOTER */
+}
